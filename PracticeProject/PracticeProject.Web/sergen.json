@@ -1,0 +1,72 @@
+{
+  "RootNamespace": "PracticeProject",
+  "ServerTypings": {
+    "Assemblies": [],
+    "LocalTexts": true
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "dbo.Test",
+          "Identifier": "Test",
+          "Module": "Test",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "mov.Genre",
+          "Identifier": "Genre",
+          "Module": "Movie",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "mov.Movie",
+          "Identifier": "Movie",
+          "Module": "Movie",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "mov.MovieCast",
+          "Identifier": "MovieCast",
+          "Module": "Movie",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "mov.MovieGenres",
+          "Identifier": "MovieGenres",
+          "Module": "Movie",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "mov.Person",
+          "Identifier": "Person",
+          "Module": "Movie",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "setup.City",
+          "Identifier": "City",
+          "Module": "Setup",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "setup.Country",
+          "Identifier": "Country",
+          "Module": "Setup",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "setup.District",
+          "Identifier": "District",
+          "Module": "Setup",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "BaseRowClasses": [],
+  "RemoveForeignFields": [],
+  "CustomGenerate": {},
+  "CustomSettings": {}
+}

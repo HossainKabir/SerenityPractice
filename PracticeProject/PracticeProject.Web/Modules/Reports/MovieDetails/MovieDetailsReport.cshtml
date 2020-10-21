@@ -1,0 +1,45 @@
+﻿@model PracticeProject.Web.Modules.Reports.MovieDetails.MovieDetailsModel
+@{
+    Layout = MVC.Views.Shared._LayoutReport;
+    var r = Model.Request;
+    var mId = PracticeProject.Movie.Entities.MovieRow.Fields;
+    int i = 1;
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="report-label col-xs-6">
+            <label>@mId.Title.Title</label>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xl-12">
+        <table class="table table-bordered table-condensed table-excel-exportable">
+            <thead>
+                <tr>#</tr>
+                <tr>@mId.Title.Title</tr>
+                <tr>@mId.Description.Title</tr>
+                <tr>@mId.ReleaseDate.Title</tr>
+                <tr>@mId.Runtime.Title</tr>
+            </thead>
+
+            <tbody>
+                @foreach(var item in Model.ItemList)
+                {
+                    <tr>
+                        <td class="rpt-id">@(i++)</td>
+                        <td class="rpt-text">@item.Title</td>
+                        <td class="rpt-text">@item.Description</td>
+                        <td class="rpt-date">@item.ReleaseDate</td>
+                        <td class="rpt-text">@item.Runtime</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
